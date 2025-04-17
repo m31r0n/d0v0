@@ -35,7 +35,7 @@ In the RootMe challenge **"Capture This"** (15 points), you are given:
 
 Its goal is to **recover the missing part** of the screenshot, reconstruct the full password, and open `Database.kdbx` to recover the flag, but to understand how we got to that goal we need to understand the reasoning above.
 
-![Details-Chall](/Site/static/images/Blog/Capture-This-Rootme.png)
+![Details-Chall](/images/Blog/Capture-This-Rootme.png)
 
 ## Reasoning
 

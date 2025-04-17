@@ -16,7 +16,7 @@ description: "Step-by-step forensic analysis of Root Me's Capture This CTF chall
 toc:
 ---
 
-# Writeup - Capture This - Root Me (Forensic)
+## Writeup: "Capture This" - Root Me
 
 ## Introduction and Context
 
@@ -35,18 +35,18 @@ In the RootMe challenge **"Capture This"** (15 points), you are given:
 
 Its goal is to **recover the missing part** of the screenshot, reconstruct the full password, and open `Database.kdbx` to recover the flag, but to understand how we got to that goal we need to understand the reasoning above.
 
-![Details-Chall](/images/Blog/Capture-This-Rootme.png)
+![Details-Chall](/Site/static/images/Blog/Capture-This-Rootme.png)
 
 ## Reasoning
 
 A quick glance at the Excel shot shows terrible password hygiene—and a tempting row labeled “Flag”—but the real clue appears in the far‑right column of the Google entry, where the cell is cut off showing only “Ke”.  
 Moreover, the Windows taskbar reveals only two open apps: Microsoft Excel and the Snipping Tool.
 
-![Image-Chall](/images/Blog/File1-CaptureThis-Chall.png)
+![Image-Chall](/Site/static/images/Blog/File1-CaptureThis-Chall.png)
 
 The cropped file’s metadata dates back to early 2023, pointing us toward the **aCropalypse** vulnerability (CVE‑2023‑28303). This flaw, affecting tools like Windows Snipping Tool and certain mobile editors, leaves the original image data intact after cropping. Though hidden from normal viewers, these residual bytes can reveal the full picture.
 
-![Time](/images/Blog/Fecha-CaptureThis-RootMe.png)
+![Time](/Site/static/images/Blog/Fecha-CaptureThis-RootMe.png)
 
 This gives us a clue to associate it with the **aCropalypse** vulnerability, identified as _CVE-2023-28303_, which was discovered in early 2023. This flaw affects image editing tools on Google Pixel phones, as well as the Snipping Tool in Windows 10 and 11. The vulnerability allowed cropped images to retain parts of the original full-screen content because the editing software failed to properly truncate the file, leaving residual data accessible.
 
@@ -74,11 +74,11 @@ _(Feel free to swap_ `_feh_` _for your favorite Linux image viewer.)_
 
 Opening `restored-Capture.png` reveals the full Excel view. The Google row’s password cell now reads in full:
 
-![Restored](/images/Blog/Restore-CaptureThis-RootMe.png)
+![Restored](/Site/static/images/Blog/Restore-CaptureThis-RootMe.png)
 
 With this string in hand, we can unlock the KeePass database. Inside the **Root-me** entry, the password field finally reveals our flag:
 
-![Restored](/images/Blog/KeePass-CaptureThis-Flag.png)
+![Restored](/Site/static/images/Blog/KeePass-CaptureThis-Flag.png)
 
 > **Flag:** @cropalypse_vuln_is_impressive
 

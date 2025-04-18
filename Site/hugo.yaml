@@ -181,24 +181,25 @@ params:
   # Experience
   experience:
     enable: true
+    
     items:
       - job: "Forensic Analyst & Incident Handler"
         company: "Lazarus Technology"
         companyUrl: "https://www.linkedin.com/company/lazarus-technology/"
         date: "May 2024 - Present"
-        content: "Lead the LATAM incident response team, managing high‑complexity security incidents. Conduct OSINT investigations on the Surface Web and Dark Web, and produce detailed forensic reports on ransomware attacks, hacks, identity fraud, and other incidents."
+        content: "Lead the LATAM incident response team, managing high-complexity security incidents. Conduct OSINT investigations on the Surface Web and Dark Web, and produce detailed forensic reports on ransomware attacks, hacks, identity fraud, and other incidents."
 
       - job: "Junior Cybersecurity Analyst"
-        company: "Centria – CSC BRECA Corp."
+        company: "Centria CSC BRECA Corp."
         companyUrl: "https://www.centria.net/"
         date: "Oct 2022 - Apr 2024"
-        content: "Performed ethical hacking and vulnerability management across corporate business units. Owned the Threat Intelligence service—administration, Dark/Deep Web monitoring, and intelligence reporting—and managed the Breach & Attack Simulator platform to align simulations with real‑world campaigns, improving endpoint, web, WAF, email protection, and lateral movement metrics. Wrote cybersecurity policies and procedures under NIST and ISO 27001."
+        content: "Performed ethical hacking and vulnerability management across corporate business units. Owned the Threat Intelligence service—administration, Dark/Deep Web monitoring, and intelligence reporting—and managed the Breach & Attack Simulator platform to align simulations with real-world campaigns, improving endpoint, web, WAF, email protection, and lateral movement metrics. Wrote cybersecurity policies and procedures under NIST and ISO27001."
 
       - job: "Cybersecurity Intern"
-        company: "Centria – CSC BRECA Corp."
+        company: "Centria - CSC BRECA Corp."
         companyUrl: "https://www.centria.net/"
         date: "Jun 2021 - Oct 2022"
-        content: "Supported low‑complexity security requirements (firewall, DLP, MDM, MFA, WAF, SIEM). Participated in change committees and security projects, evaluated and implemented security technologies, drafted monthly reports and KPI presentations, and automated recurring tasks to boost operational efficiency."
+        content: "Supported low-complexity security requirements (firewall, DLP, MDM, MFA, WAF, SIEM). Participated in change committees and security projects, evaluated and implemented security technologies, drafted monthly reports and KPI presentations, and automated recurring tasks to boost operational efficiency."
 
   # Education
   education:
@@ -209,15 +210,15 @@ params:
         school:
           name: "HackTheBox"
           url: "http://app.hackthebox.com/users/301285"
-        date: "2020"
+        date: ""
         content: >-
-          Achieved HTB rank – Hacker in 2020 by completing 25+ machines and 46+ challenges, ranking in the top 10 in Peru.
+          Achieved HTB rank - Hacker in 2020 by completing 25+ machines and 46+ challenges, ranking in the top 10 in Peru.
 
       - title: "Bachelor of Systems Engineering"
         school:
           name: "Universidad Nacional de Ingeniería"
           url: "https://www.uni.edu.pe"
-        date: "2018 – 2025"
+        date: "2018-2025"
         content: >-
           Scholarship recipient for training programs to develop the University’s Cybersecurity course.
 

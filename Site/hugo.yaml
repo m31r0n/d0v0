@@ -135,8 +135,8 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "David Ramos."
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
+    subtitle: "Threat Hunter & CTF Enthusiast"
+    content: "A hacker at heart – I live for CTFs, threat hunting and OSINT deep dives. Expect write‑ups on forensics, tool builds, exploit development and the art of compromise."
     image: /images/hero.png
     bottomImage:
       enable: true

@@ -1,0 +1,22 @@
+{{ if .Site.Params.presentations.enable | default false }}
+<section id="presentations" class="py-5">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <h3 class="mb-0">{{ .Site.Params.presentations.title | default "Presentaciones" }}</h3>
+      {{ if .Site.Params.presentations.talksRepo }}
+      <a class="btn btn-sm presentations-repo-btn" href="{{ .Site.Params.presentations.talksRepo }}" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github me-1"></i> Talks en GitHub
+      </a>
+      {{ end }}
+    </div>
+    <div class="presentations-grid mt-4">
+      {{ range .Site.Params.presentations.items }}
+      <article class="compact-panel presentation-item">
+        <h6 class="mb-1">{{ .event }}</h6>
+        <p class="mb-0">{{ .topic }}</p>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -125,3 +125,28 @@ li > .dropdown-toggle:focus{
 #search-results .card a:hover {
     color: var(--primary-color) !important;
 }
+#profileHeader .navbar {
+    border-radius: 1rem;
+    margin: 0.5rem auto;
+    background: color-mix(in srgb, var(--background-color) 88%, transparent) !important;
+    backdrop-filter: blur(8px);
+}
+
+.showHeaderOnTop {
+    border-bottom: 1px solid color-mix(in srgb, var(--primary-color) 20%, transparent);
+}
+
+.navbar .nav-link {
+    border-radius: 0.6rem;
+    padding: 0.4rem 0.7rem !important;
+}
+
+.navbar .nav-link:hover {
+    background-color: color-mix(in srgb, var(--primary-color) 14%, transparent);
+}
+
+.lang-switcher .nav-link {
+    padding: 0.35rem 0.6rem !important;
+    margin: 0 0.15rem;
+    border: 1px solid color-mix(in srgb, var(--primary-color) 20%, transparent);
+}

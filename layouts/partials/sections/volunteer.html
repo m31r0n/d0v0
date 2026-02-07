@@ -1,0 +1,18 @@
+{{ if .Site.Params.volunteer.enable | default false }}
+<section id="volunteer" class="py-5">
+  <div class="container">
+    <h3 class="text-center">{{ .Site.Params.volunteer.title | default "Voluntariado" }}</h3>
+    <div class="row g-3 mt-2">
+      {{ range .Site.Params.volunteer.items }}
+      <div class="col-md-6">
+        <div class="compact-panel h-100">
+          <h5>{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .role }}</a>{{ else }}{{ .role }}{{ end }}</h5>
+          <div class="text-secondary">{{ .org }}</div>
+          <p class="mb-0 mt-2">{{ .content }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

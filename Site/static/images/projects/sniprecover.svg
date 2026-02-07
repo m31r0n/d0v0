@@ -1,0 +1,9 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 420'>
+<defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='#a21caf'/><stop offset='1' stop-color='#3b0764'/></linearGradient></defs>
+<rect width='800' height='420' fill='url(#g)'/>
+<rect x='24' y='24' width='752' height='372' rx='16' fill='#111827' stroke='#f0abfc' stroke-width='2'/>
+<text x='56' y='98' fill='#fae8ff' font-size='46' font-family='Arial' font-weight='700'>SnipRecover-CLI</text>
+<text x='56' y='150' fill='#f5d0fe' font-size='25' font-family='Arial'>Restore corrupted PNGs (Acropalypse)</text>
+<text x='56' y='198' fill='#e879f9' font-size='22' font-family='Arial'>Python · Incident Response · CLI</text>
+<rect x='56' y='232' width='280' height='90' rx='10' fill='#1f2937' stroke='#c084fc'/><text x='74' y='286' fill='#d8b4fe' font-size='20' font-family='monospace'>scan --recover *.png</text>
+</svg>

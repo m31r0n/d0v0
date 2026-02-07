@@ -121,6 +121,7 @@
                     </li>
                     {{ end }}
 
+
                     {{ if and (.Site.Params.achievements.enable | default false) (not (.Site.Params.navbar.menus.disableAchievements | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#achievements"
@@ -173,6 +174,14 @@
                     {{end}}
                     {{end}}
 
+
+                    {{ if gt (len .Site.Home.AllTranslations) 0 }}
+                    <li class="nav-item navbar-text lang-switcher">
+                        {{ range .Site.Home.AllTranslations }}
+                        <a class="nav-link d-inline-block" href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+                        {{ end }}
+                    </li>
+                    {{ end }}
                     {{ if (not .Site.Params.theme.disableThemeToggle | default false) }}
                     <li class="nav-item navbar-text">
                         <!-- darkmode mode toggle -->

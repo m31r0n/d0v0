@@ -1,0 +1,9 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 420'>
+<defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='#0ea5e9'/><stop offset='1' stop-color='#0f172a'/></linearGradient></defs>
+<rect width='800' height='420' fill='url(#g)'/>
+<rect x='24' y='24' width='752' height='372' rx='16' fill='#0b1220' stroke='#67e8f9' stroke-width='2'/>
+<text x='56' y='98' fill='#e0f2fe' font-size='50' font-family='Arial' font-weight='700'>meta-scan</text>
+<text x='56' y='150' fill='#bae6fd' font-size='25' font-family='Arial'>Metadata + IOC triage for documents</text>
+<text x='56' y='198' fill='#67e8f9' font-size='22' font-family='Arial'>OSINT · Threat Intel · Automation</text>
+<rect x='56' y='232' width='380' height='90' rx='10' fill='#111827' stroke='#22d3ee'/><text x='74' y='286' fill='#a5f3fc' font-size='20' font-family='monospace'>meta-scan --sanitize --recursive ./evidence</text>
+</svg>

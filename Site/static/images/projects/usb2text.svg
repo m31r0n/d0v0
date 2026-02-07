@@ -1,0 +1,6 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 420'>
+<rect width='800' height='420' fill='#052e16'/><rect x='24' y='24' width='752' height='372' rx='16' fill='#064e3b' stroke='#34d399'/>
+<text x='60' y='110' fill='#86efac' font-size='48' font-family='Arial' font-weight='700'>USB2TEXT-CTF</text>
+<text x='60' y='170' fill='#d1fae5' font-size='26' font-family='Arial'>Decode HID keystrokes from pcap/pcapng</text>
+<text x='60' y='220' fill='#6ee7b7' font-size='22' font-family='Arial'>Python · PCAP · Forensics</text>
+</svg>

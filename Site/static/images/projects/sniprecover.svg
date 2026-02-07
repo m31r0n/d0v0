@@ -1,0 +1,6 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 420'>
+<rect width='800' height='420' fill='#3b0764'/><rect x='24' y='24' width='752' height='372' rx='16' fill='#581c87' stroke='#c084fc'/>
+<text x='60' y='110' fill='#e9d5ff' font-size='46' font-family='Arial' font-weight='700'>SnipRecover-CLI</text>
+<text x='60' y='170' fill='#f5d0fe' font-size='26' font-family='Arial'>Acropalypse detection & PNG restoration</text>
+<text x='60' y='220' fill='#d8b4fe' font-size='22' font-family='Arial'>Python · Incident Response · CLI</text>
+</svg>

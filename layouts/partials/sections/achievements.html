@@ -5,7 +5,7 @@
         <div class="row g-4 mt-1">
             <div class="col-lg-8">
                 <div class="compact-panel h-100">
-                    <h5 class="mb-3">Logros recientes</h5>
+                    <h5 class="mb-3">{{ .Site.Params.achievements.recentTitle | default "Logros recientes" }}</h5>
                     <ol class="achievement-list mb-0">
                         {{ range .Site.Params.achievements.items }}
                         <li>
@@ -24,7 +24,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="compact-panel h-100">
-                    <h5 class="mb-3">Certificaciones</h5>
+                    <h5 class="mb-3">{{ .Site.Params.achievements.certTitle | default "Certificaciones" }}</h5>
                     <ul class="certification-list mb-0">
                         {{ range .Site.Params.certifications.items }}
                         <li>
@@ -37,7 +37,7 @@
                         </li>
                         {{ end }}
                     </ul>
-                    <small class="d-block mt-3">Fuente: perfil de LinkedIn y publicaciones públicas.</small>
+                    <small class="d-block mt-3">{{ .Site.Params.achievements.sourceNote | default "Fuente: perfil de LinkedIn y publicaciones públicas." }}</small>
                 </div>
             </div>
         </div>

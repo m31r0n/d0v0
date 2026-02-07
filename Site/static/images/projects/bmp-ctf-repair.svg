@@ -1,0 +1,6 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 420'>
+<rect width='800' height='420' fill='#0f172a'/><rect x='24' y='24' width='752' height='372' rx='16' fill='#111827' stroke='#60a5fa'/>
+<text x='60' y='110' fill='#93c5fd' font-size='44' font-family='Arial' font-weight='700'>BMP-CTF-Repair-Tool</text>
+<text x='60' y='170' fill='#cbd5e1' font-size='26' font-family='Arial'>Forensic image repair for CTF challenges</text>
+<text x='60' y='220' fill='#60a5fa' font-size='22' font-family='Arial'>Python · DFIR · BMP header fixing</text>
+</svg>

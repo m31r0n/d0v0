@@ -731,3 +731,17 @@ header .navbar.animate {
         padding: 1rem;
     }
 }
+
+/* Nuevas secciones y utilidades */
+.compact-panel {
+    background: var(--secondary-color);
+    border: 1px solid color-mix(in srgb, var(--primary-color) 25%, transparent);
+    border-radius: 1rem;
+    padding: 1.15rem;
+    box-shadow: 0px 8px 40px rgb(15 80 100 / 10%);
+}
+
+#presentations h3,
+#volunteer h3 {
+    color: var(--text-secondary-color) !important;
+}

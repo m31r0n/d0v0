@@ -144,3 +144,9 @@ li > .dropdown-toggle:focus{
 .navbar .nav-link:hover {
     background-color: color-mix(in srgb, var(--primary-color) 14%, transparent);
 }
+
+.lang-switcher .nav-link {
+    padding: 0.35rem 0.6rem !important;
+    margin: 0 0.15rem;
+    border: 1px solid color-mix(in srgb, var(--primary-color) 20%, transparent);
+}

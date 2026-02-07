@@ -15,12 +15,13 @@
                 <p class="hero-content">
                     {{ .Site.Params.hero.content | markdownify }}
                 </p>
+                {{ if .Site.Params.hero.badges }}
                 <div class="hero-highlights" aria-label="Highlights profesionales">
-                    <span class="hero-pill">SOC / DFIR</span>
-                    <span class="hero-pill">OSINT</span>
-                    <span class="hero-pill">CTF Player</span>
-                    <span class="hero-pill">Threat Hunting</span>
+                    {{ range .Site.Params.hero.badges }}
+                    <span class="hero-pill">{{ . }}</span>
+                    {{ end }}
                 </div>
+                {{ end }}
                 <div class="row">
                     <div class="col-auto h-100">
                         {{ if .Site.Params.hero.button.enable }}

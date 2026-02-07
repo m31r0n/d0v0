@@ -121,6 +121,22 @@
                     </li>
                     {{ end }}
 
+
+                    {{ if .Site.Params.presentations.enable | default false }}
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#presentations" aria-label="presentations">
+                            {{ .Site.Params.presentations.title | default "Presentaciones" }}
+                        </a>
+                    </li>
+                    {{ end }}
+
+                    {{ if .Site.Params.volunteer.enable | default false }}
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#volunteer" aria-label="volunteer">
+                            {{ .Site.Params.volunteer.title | default "Voluntariado" }}
+                        </a>
+                    </li>
+                    {{ end }}
                     {{ if and (.Site.Params.achievements.enable | default false) (not (.Site.Params.navbar.menus.disableAchievements | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#achievements"
@@ -173,6 +189,14 @@
                     {{end}}
                     {{end}}
 
+
+                    {{ if gt (len .Site.Home.AllTranslations) 0 }}
+                    <li class="nav-item navbar-text lang-switcher">
+                        {{ range .Site.Home.AllTranslations }}
+                        <a class="nav-link d-inline-block" href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+                        {{ end }}
+                    </li>
+                    {{ end }}
                     {{ if (not .Site.Params.theme.disableThemeToggle | default false) }}
                     <li class="nav-item navbar-text">
                         <!-- darkmode mode toggle -->

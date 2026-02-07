@@ -1,0 +1,17 @@
+{{ if .Site.Params.presentations.enable | default false }}
+<section id="presentations" class="py-5">
+  <div class="container">
+    <h3 class="text-center">{{ .Site.Params.presentations.title | default "Presentaciones" }}</h3>
+    <div class="compact-panel mt-4">
+      <ul class="achievement-list mb-0">
+        {{ range .Site.Params.presentations.items }}
+        <li>
+          <div class="achievement-title">{{ .event }}</div>
+          <p class="mb-0">{{ .topic }}</p>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</section>
+{{ end }}

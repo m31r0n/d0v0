@@ -122,21 +122,6 @@
                     {{ end }}
 
 
-                    {{ if .Site.Params.presentations.enable | default false }}
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#presentations" aria-label="presentations">
-                            {{ .Site.Params.presentations.title | default "Presentaciones" }}
-                        </a>
-                    </li>
-                    {{ end }}
-
-                    {{ if .Site.Params.volunteer.enable | default false }}
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#volunteer" aria-label="volunteer">
-                            {{ .Site.Params.volunteer.title | default "Voluntariado" }}
-                        </a>
-                    </li>
-                    {{ end }}
                     {{ if and (.Site.Params.achievements.enable | default false) (not (.Site.Params.navbar.menus.disableAchievements | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#achievements"

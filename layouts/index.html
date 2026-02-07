@@ -1,5 +1,10 @@
 {{ define "head" }}
-<meta name="description" content={{ .Site.Params.description }}>
+<meta name="description" content="{{ .Site.Params.description }}">
+<meta name="keywords" content="David Ramos, DFIR, Threat Intelligence, OSINT, Incident Response, Cybersecurity, CTF, Digital Forensics">
+<meta property="og:title" content="{{ .Site.Title }}">
+<meta property="og:description" content="{{ .Site.Params.description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Site.BaseURL }}">
 <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/index.css" media="all">
 <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/projects.css" media="all">
 
@@ -15,7 +20,6 @@
 {{- partial "sections/hero/index.html" . -}}
 {{- partial "sections/about.html" . -}}
 {{- partial "sections/experience.html" . -}}
-{{- partial "sections/education.html" . -}}
 {{- partial "sections/projects.html" . -}}
 {{- partial "sections/presentations.html" . -}}
 {{- partial "sections/volunteer.html" . -}}

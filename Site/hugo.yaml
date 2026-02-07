@@ -208,6 +208,7 @@ params:
   presentations:
     enable: true
     title: "Presentaciones"
+    talksRepo: "https://github.com/m31r0n/talks-and-presentations"
     items:
       - event: "PERÚHACK 2023"
         topic: "Campañas de Ingeniería Social, Spoofing y Evil Twins"

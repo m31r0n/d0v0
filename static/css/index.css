@@ -631,3 +631,103 @@ header .navbar.animate {
         justify-content: center;
     }
 }
+
+/* Rediseño v2 */
+#hero {
+    min-height: 88vh;
+}
+
+#hero h1 {
+    letter-spacing: -0.03em;
+}
+
+#hero .content {
+    max-width: 760px;
+}
+
+#experience .nav {
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
+#experience .nav-item .nav-link {
+    border: 1px solid color-mix(in srgb, var(--primary-color) 20%, transparent);
+    border-radius: 999px;
+    padding: 0.35rem 0.9rem;
+}
+
+#experience .tab-pane {
+    border-left: 3px solid color-mix(in srgb, var(--primary-color) 45%, transparent);
+    padding-left: 1rem;
+}
+
+#projects .card {
+    min-height: 360px;
+}
+
+#projects .card .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+#projects .badge {
+    padding: 0.45rem 0.55rem;
+    border: 1px solid color-mix(in srgb, var(--primary-color) 25%, transparent);
+}
+
+#achievements .compact-panel {
+    background: var(--secondary-color);
+    border: 1px solid color-mix(in srgb, var(--primary-color) 25%, transparent);
+    border-radius: 1rem;
+    padding: 1.15rem;
+    box-shadow: 0px 8px 40px rgb(15 80 100 / 10%);
+}
+
+#achievements .achievement-list,
+#achievements .certification-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#achievements .achievement-list li,
+#achievements .certification-list li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#achievements .achievement-list li::before,
+#achievements .certification-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+#achievements .achievement-title {
+    font-weight: 700;
+}
+
+#achievements .achievement-title a,
+#achievements .certification-list a {
+    color: var(--text-link-color);
+    text-decoration: none;
+}
+
+#achievements .certification-list span {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-secondary-color);
+}
+
+@media (max-width: 992px) {
+    #achievements .compact-panel {
+        padding: 1rem;
+    }
+}

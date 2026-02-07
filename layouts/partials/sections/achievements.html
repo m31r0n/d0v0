@@ -2,43 +2,43 @@
 <section id="achievements" class="py-5">
     <div class="container">
         <h3 class="text-center">{{ .Site.Params.achievements.title | default "Achievements" }}</h3>
-        <div class="px-0 px-md-5 px-lg-5">
-            <div class="row justify-content-center px-3 px-md-5 px-lg-5">
-                {{ range .Site.Params.achievements.items }}
-                {{ if .url }}
-                <div class="col-lg-4 col-md-6 my-3">
-                    <a class="card my-3 h-100 p-3" href="{{ .url }}" title="{{ .title }}" target="_blank">
-                        {{if .image }}
-                            <div class="card-head">
-                                <img class="card-img-top" src="{{ .image }}">
+        <div class="row g-4 mt-1">
+            <div class="col-lg-8">
+                <div class="compact-panel h-100">
+                    <h5 class="mb-3">Logros recientes</h5>
+                    <ol class="achievement-list mb-0">
+                        {{ range .Site.Params.achievements.items }}
+                        <li>
+                            <div class="achievement-title">
+                                {{ if .url }}
+                                <a href="{{ .url }}" title="{{ .title }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>
+                                {{ else }}
+                                {{ .title }}
+                                {{ end }}
                             </div>
+                            <p class="mb-0">{{ .content }}</p>
+                        </li>
                         {{ end }}
-                        <div class="card-body bg-transparent">
-                            <h5 class="card-title bg-transparent">{{ .title }}</h5>
-                            <div class="card-text secondary-font">
-                                {{ .content }}
-                            </div>
-                        </div>
-                    </a>
+                    </ol>
                 </div>
-                {{ else }}
-                <div class="col-lg-4 col-md-6 my-3">
-                    <div class="card my-3 h-100 p-3" title="{{ .title }}">
-                        {{if .image }}
-                            <div class="card-head">
-                                <img class="card-img-top" src="{{ .image }}">
-                            </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="compact-panel h-100">
+                    <h5 class="mb-3">Certificaciones</h5>
+                    <ul class="certification-list mb-0">
+                        {{ range .Site.Params.certifications.items }}
+                        <li>
+                            {{ if .url }}
+                            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>
+                            {{ else }}
+                            {{ .name }}
+                            {{ end }}
+                            <span>{{ .issuer }}</span>
+                        </li>
                         {{ end }}
-                        <div class="card-body bg-transparent">
-                            <h5 class="card-title bg-transparent">{{ .title }}</h5>
-                            <div class="card-text secondary-font">
-                                {{ .content }}
-                            </div>
-                        </div>
-                    </div>
+                    </ul>
+                    <small class="d-block mt-3">Fuente: perfil de LinkedIn y publicaciones públicas.</small>
                 </div>
-                {{ end }}
-                {{ end }}
             </div>
         </div>
     </div>

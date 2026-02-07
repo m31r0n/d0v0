@@ -224,6 +224,7 @@ params:
   # Achievements
   achievements:
     enable: true
+    title: "Logros y certificaciones"
     items:
       - title: EkoParty Advance CTF 2024 – Runner‑Up
         content: Achieved 2nd place with Team AllpAcks at EkoParty Advance CTF 2024 in Argentina.
@@ -261,52 +262,79 @@ params:
         content: Champion of Concurso de Investigación II‑FIIS‑UNI 2019 in Perú.
 
 
+  certifications:
+    items:
+      - name: "Google Cybersecurity Professional Certificate"
+        issuer: "Google"
+      - name: "Fortinet NSE 1 & NSE 2"
+        issuer: "Fortinet"
+      - name: "Cyber Threat Intelligence 101"
+        issuer: "arcX"
+      - name: "Ver perfil completo de certificaciones"
+        issuer: "LinkedIn"
+        url: "https://www.linkedin.com/in/david-ramos-rodriguez/"
+
+
   # projects
   projects:
     enable: true
-    title: "Proyectos Destacados"
+    title: "Herramientas y Proyectos"
     items:
-      - title: CTF Writeups Lab
-        content: Laboratorio personal de writeups con metodología reproducible para reversing, forense y explotación web.
+      - title: BMP-CTF-Repair-Tool
+        content: Reparador automático de imágenes BMP corruptas para retos CTF forenses (offset, DIB, tamaño y dimensiones con variantes de fuerza bruta).
         image: /images/projects/profile.png
         featured:
-          name: Ver sitio
-          link: https://d0v0.netlify.app/blogs
+          name: Ver repositorio
+          link: https://github.com/m31r0n/BMP-CTF-Repair-Tool
         badges:
+          - "Python"
+          - "DFIR"
           - "CTF"
-          - "Forense"
-          - "Writeups"
         links:
           - icon: fab fa-github
-            url: https://github.com/m31r0n
+            url: https://github.com/m31r0n/BMP-CTF-Repair-Tool
 
-      - title: Threat Intelligence Playbooks
-        content: Plantillas y playbooks para investigación OSINT y priorización de alertas en operaciones SOC.
+      - title: USB2TEXT-CTF
+        content: Decodificador de keystrokes USB-HID para forense CTF desde pcap/pcapng o hex crudo, orientado a triage rápido.
         image: /images/projects/converter.jpg
         featured:
-          name: Ver perfil
-          link: https://www.linkedin.com/in/david-ramos-rodriguez/
+          name: Ver repositorio
+          link: https://github.com/m31r0n/USB2TEXT-CTF
         badges:
-          - "OSINT"
-          - "SOC"
-          - "Playbooks"
+          - "Python"
+          - "PCAP"
+          - "Forensics"
         links:
-          - icon: fab fa-linkedin
-            url: https://www.linkedin.com/in/david-ramos-rodriguez/
+          - icon: fab fa-github
+            url: https://github.com/m31r0n/USB2TEXT-CTF
 
-      - title: DFIR Automation Toolkit
-        content: Scripts de automatización para triage inicial y normalización de evidencia durante incidentes.
+      - title: SnipRecover-CLI
+        content: Utilidad para detectar y restaurar capturas PNG vulnerables al Acropalypse (CVE-2023-28303) en Windows Snipping Tool.
         image: /images/projects/profile2.jpg
         featured:
-          name: Contactar
-          link: mailto:david.ramos.security@proton.me
+          name: Ver repositorio
+          link: https://github.com/m31r0n/SnipRecover-CLI
         badges:
-          - "DFIR"
-          - "Automation"
           - "Python"
+          - "Incident Response"
+          - "CLI"
         links:
-          - icon: fas fa-envelope
-            url: mailto:david.ramos.security@proton.me
+          - icon: fab fa-github
+            url: https://github.com/m31r0n/SnipRecover-CLI
+
+      - title: meta-scan
+        content: Escáner recursivo de metadatos e IOC ligeros con opción de sanitización para PDF y OOXML en entornos Windows.
+        image: /images/projects/profile.png
+        featured:
+          name: Ver repositorio
+          link: https://github.com/m31r0n/meta-scan
+        badges:
+          - "Threat Intel"
+          - "OSINT"
+          - "Automation"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/m31r0n/meta-scan
 
   #Contact
   contact:
@@ -315,7 +343,7 @@ params:
     title: "Hablemos"
     content: "¿Tienes una investigación en curso, una oportunidad profesional o quieres colaborar en un CTF? Escríbeme y te responderé lo antes posible."
     btnName: "Enviar correo"
-    btnLink: mailto:david.ramos.security@proton.me
+    btnLink: mailto:david.ramos.r@uni.pe
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
